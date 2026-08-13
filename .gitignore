@@ -1,0 +1,68 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# Virtual Environments
+# =========================
+RA/
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Environment Variables
+# =========================
+.env
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# Python Tools
+# =========================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Build Files
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# User Uploaded Files
+# =========================
+data/uploads/*
+
+# Keep folder structure
+!data/uploads/.gitkeep
+
+# =========================
+# Chat History
+# =========================
+data/chat_history/*
+
+# Keep folder structure
+!data/chat_history/.gitkeep
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
