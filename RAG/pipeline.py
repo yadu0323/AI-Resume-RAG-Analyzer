@@ -4,7 +4,6 @@ from RAG.chunker import TextChunker
 from RAG.embeddings import EmbeddingGenerator
 from RAG.vectorstore import VectorStore
 from RAG.retriever import Retriever
-# from RAG.router import Router
 from RAG.llm import OllamaLLM
 from RAG.prompts import SYSTEM_PROMPT
 from RAG.intent import IntentDetector
@@ -35,6 +34,8 @@ class ResumeRAGPipeline:
         """
 
         text = self.loader.load_document(path)
+
+        self.resume_text = text
 
         text = self.cleaner.clean(text)
 
