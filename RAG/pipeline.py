@@ -18,10 +18,7 @@ class ResumeRAGPipeline:
         self.embedder = EmbeddingGenerator()
         self.vectorstore = VectorStore()
 
-        self.retriever = Retriever(
-            self.embedder,
-            self.vectorstore
-        )
+        self.retriever = Retriever(self.embedder,self.vectorstore)
 
         # self.router = Router()
         self.intent_detector = IntentDetector()

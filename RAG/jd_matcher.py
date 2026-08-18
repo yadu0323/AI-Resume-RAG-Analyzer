@@ -9,17 +9,10 @@ class JDMatcher:
 
     def match(self, resume_text: str, jd_text: str):
 
-        resume_embedding = self.model.encode(
-            [resume_text]
-        )
+        resume_embedding = self.model.encode([resume_text])
 
-        jd_embedding = self.model.encode(
-            [jd_text]
-        )
+        jd_embedding = self.model.encode([jd_text])
 
-        score = cosine_similarity(
-            resume_embedding,
-            jd_embedding
-        )[0][0]
+        score = cosine_similarity(resume_embedding,jd_embedding)[0][0]
 
         return round(float(score) * 100, 2)
